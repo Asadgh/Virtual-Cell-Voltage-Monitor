@@ -1,0 +1,110 @@
+body {
+    height: 600px;
+    width: 750px;
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    padding: 15px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 85%;
+    max-width: 700px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    font-size: large;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+    background-color: #f4f4f4;
+    border: 1.5px solid #ddd;
+  }
+  
+  #mac-text {
+    width: 75%;
+    font-size: large;
+    padding: 5px;
+    max-width: 500px;
+  }
+
+  #fetch-btn {
+    width: 20%;
+    border: 2px solid pink;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: darkcyan;
+    color: whitesmoke;
+  }
+
+  #fetch-btn:hover {
+    border: 1px solid darkcyan;
+    font-weight: bolder;
+    background-color: pink;
+    color: black;
+  }
+
+  .warn-text {
+    color: red;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+
+.loading-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .loading-text::after {
+    content: '...';
+    animation: dots 1.5s steps(3, end) infinite;
+  }
+  
+  @keyframes dots {
+    0%, 20% {
+      content: '.';
+    }
+    40% {
+      content: '..';
+    }
+    60%, 100% {
+      content: '...';
+    }
+  }
+  

@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Virtual Cell Voltage Monitor",
+    "description": "A basic Chrome extension to monitor the virtual cell voltages of a Sparrow Battery on a charger dock",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "icon128.png"
+      }
+    },
+    "permissions": [
+      "storage", 
+      "activeTab", 
+      "scripting"
+    ],
+    "host_permissions": [
+      "http://10.0.0.3:5005/status"
+    ],
+    "icons": {
+      "128": "icon128.png"
+    }
+  }
